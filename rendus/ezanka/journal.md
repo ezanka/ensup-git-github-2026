@@ -12,3 +12,7 @@ ethan@MacBook ensup-git-github-2026 % git log --oneline -- rendus/ezanka/acces.m
 53fe604 (HEAD -> main) docs: ajoute d'informations sur l'accès a l'école
 
 la commande remonte le dernier commit du fichier
+
+### id commit
+4c3ad34 (HEAD -> main) docs: ajout de la date d'ouverture
+fc62f68 (feature/accessibilite) docs: ajouter les indications d accessibilite
