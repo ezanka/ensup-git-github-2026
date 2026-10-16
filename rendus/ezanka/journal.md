@@ -28,3 +28,14 @@ clone en local
 
 ### branch
 créer un "environnement" distinct avec des fichiers et des modifications differente des autre branch
+
+### PR collecte 
+https://github.com/AbidHamza/ensup-git-github-2026/pull/6
+
+### PR collecte 
+https://github.com/ezanka/ensup-git-github-2026/pull/1
+
+### Commentaire utile
+
+### Commit 
+745dbf9 (origin/feature/equipe, feature/equipe) docs:  information sur l'absense des coordination des salles
