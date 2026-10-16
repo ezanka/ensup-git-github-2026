@@ -56,3 +56,14 @@ le commanditaire valide 09h45, remplacé dans `horaire.txt`, marqueurs supprimé
 ### Parents du commit de fusion : 
 10def57 (HEAD -> main) fix: convenir de 09h45
 1718132 (feature/horaire) feat: proposer 10h00
+
+## Fetch vs merge (push refusé)
+
+### Pourquoi le push a été refusé : 
+j'ai commité sur GitHub (`programme.md`) et en local (`README.md`) : les deux histoires ont avancé, `origin/main` contient un commit que je n'ai pas.
+
+### Pourquoi `fetch` seul n'aurait pas ajouté la visite libre à mon fichier local : 
+`git fetch origin` télécharge seulement les nouveaux commits dans `origin/main` (branche de suivi), sans toucher à ma branche `main` ni à mes fichiers. Il faut `git merge origin/main` (ou `git pull`) pour intégrer ces changements.
+
+### Résultat : 
+fusion sans conflit (fichiers différents : `programme.md` et `README.md`), commit de fusion "merge: recuperer le programme publie en ligne", puis push accepté sans `--force`.
