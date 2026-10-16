@@ -39,3 +39,20 @@ https://github.com/ezanka/ensup-git-github-2026/pull/1
 
 ### Commit 
 745dbf9 (origin/feature/equipe, feature/equipe) docs:  information sur l'absense des coordination des salles
+
+
+### Erreur de départ :
+`git add` sur `brouillon.txt` trop tôt, corrigé avec `git restore --staged`.
+
+### Deux propositions : 
+`main` = 09h30, `feature/horaire` = 10h00 (même ligne de `horaire.txt`, donc conflit au merge).
+
+### Décision retenue : 
+le commanditaire valide 09h45, remplacé dans `horaire.txt`, marqueurs supprimés.
+
+### Commandes de fin de fusion : 
+`git add horaire.txt`, `git commit -m "fix: convenir de 09h45"`, `git status`.
+
+### Parents du commit de fusion : 
+10def57 (HEAD -> main) fix: convenir de 09h45
+1718132 (feature/horaire) feat: proposer 10h00
